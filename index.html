@@ -1,175 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type
-</head>
-
-<body>
-
-<!DOCTYPE html>
-	<html>
-	
-		<head>
-			<title>UWC Encyclopedia</title>
-				
+		<title>UWC Encyclopedia</title>				
 		<meta name ="viewport" contents ="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-
 		<style type="text/css">
 
-				.wineCard {
-				border: 1px solid black;
-				width: 50%;
-				font-size: 12px;
-				list-style: none;
-				padding: 20px;
-				border-radius: 20px;
-				margin-bottom: 20px;
-				}
-
-				.headline {
-				background: rgba(35, 70, 162, .6);
-				margin: 0px;
-				padding: 40px;
-				text-align: center;
-				border-radius: 20px;
-				font-family: helvetica;
-				width: 70%;
-				color: rgb(148,5,5);
-				font-weight: 100;
-				}
-
-  			.container {
-       	position:relative;
-   			}
-
-   			.content {
-	      position:relative;
-	      z-index:5;
-	    	}
-	   
-				.background {
-				background-image: url('http://upload.wikimedia.org/wikipedia/commons/a/a0/Tempranillowine.jpg');
-				background-color: black;
-				position: inherit;
-    		top: 0;
-    		left: 0;
-		    width: 100%;
-		    height: 100%;
-		    background-repeat: repeat;
-		    background-attachment: fixed;
-		    z-index:1;
-		    background-size: 130%;
-		    opacity: 0.8;
-		    filter:alpha(opacity=80);
-				}
-
-				.col-xs-6 {
-				height: 100px;
-				text-align: center;
-				}
-
 		</style>
+</head>
+<body>
 
-		</head>
-			<div class="container">
+Hello!
 
-				<div class="row">
+<div>
 
-					<div.col-xs-6>col-xs-6</div>
-				<div class="content">
-				<div class="background">
+<p>Please enter your first name, last name, and email address.</p>
 
-			<body>
-				<h2 class="headline">Welcome to the Underground Wine Club Encyclopedia of Fine Wines</h2>
-					<p>Here you'll find our glossary of wine varieties, sub varieties, regions, and the club's historic highlights.  Your education on these subjects is <strong>paramount to enjoyment!</strong> <a href="http://www.winetasting.com/Wine-101">Read Wine Tasting 101</a> </p>
+<form name="newUserForm">
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname"><br>
+Email address: <input type="text" name="email">
+</form>
 
-				<h3>Varietal Wines</h3>
-					<p>A Varietal describes a wine made primarily from a single named grape variety, and which typically displays the name of that variety on the wine label.  Examples of grape varieties commonly used in varietal wines are Cabernet Sauvignon, Chardonnay and Merlot. <a href="http://en.wikipedia.org/wiki/Varietal">Read More</a> </p>
+<div id="userButton"><input type="submit"></div>
 
-						<ol>
-							<li class="wineCard">
-								<div class ="wineCardClickable1">
-									<strong>Chardonnay</strong>
-									<p>"Due to the "malleability" of Chardonnay in winemaking and its ability to reflect its terroir, there is not one distinct universal "style" or set of constants that could be applied to Chardonnay made across the globe." <a href="http://en.wikipedia.org/wiki/Chardonnay">More</a> </p>
-								</div>
-								<div class="wineCardToggleable1">
-									<ul>
-									<p>Featured Region: Burgundy <a href="http://www.totalwine.com/eng/guide-to-wine/chardonnay.cfm">More</a>:</p>
-									<p>Sub-Regions:</p>
-										<li>M&#226;connais</li>
-											<p>(Consisting of Pouilly-Fuiss&eacute;, M&acirc;con-Villages and Saint-V&eacute;ran)</p>
-											<p>Known For: "a lovely crisp style."
-										<li>C&ocirc;te Chalonnaise</li>
-											<p>(Consisting of Rully and Mercurey)</p>
-											<p>Known For: "producing some of the best-valued Chardonnays in all of Burgundy."</p>
-										<li>C&ocirc;te de Beaune</li>
-											<p>(Consisting of Montrachet, Meursault, Puligny-Montrachet and Chassagne-Montrachet)</p>
-											<p>Known For: "at their best, these wines are amazingly elegant, rich and complex."</p>
-										<li>Chablis</p>
-											<p>(The northern-most sub-region)
-											<p>Known For: "crisp acidity, unaltered fruit flavors and flinty notes. Chablis is excellent with shellfish, especially oysters!"
-									</ul>
-								</div>
-							</li>
+<ul id="wine"> 
+</ul>
 
-							
-							<li class="wineCard">
-								<div class ="wineCardClickable2">
-								<p><strong>Merlot</strong></p></ul>
-								<p>"Merlot is a dark blue-coloured wine grape variety, that is used as both a blending grape and for varietal wines. The name Merlot is thought to be a diminutive of merle, the French name for the blackbird, probably a reference to the color of the grape." <a href="http://en.wikipedia.org/wiki/Merlot">More</a> </p>
-								</div>	
-								<div class="wineCardToggleable2">
-									<ul>
-									<p>Featured Region:	California <a href="http://en.wikipedia.org/wiki/Merlot#United_States">More</a>:</p>
-										<p>Sub-Regions:</p>
-										<li>Napa</li>
-											<p>(Consisting of Los Carneros, Mount Veeder, Oakville and Rutherford)</p>
-											<p>Known For: "ripe blackberry and black raspberry notes."</p>
-										<li>Sonoma</li>
-											<p>(Consisting of Alexander Valley, Carneros and Dry Creek Valley)</p>
-											<p>Known For: "plum, tea leaf and black cherry notes."</p>
-									</ul>
-								</div>
-							</li>
+</div>
+	
+<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bower_components/backbone/backbone.js"></script>
 
+<!-- backbone files -->
 
-							<li class="wineCard"><p>
-								<div class ="wineCardClickable3">
-								<strong>Cabernet Sauvignon</strong></p></ul>
-								<p>"Cabernet Sauvignon is one of the world's most widely recognized red wine grape varieties. It is grown in nearly every major wine producing country among a diverse spectrum of climates from Canada's Okanagan Valley to Lebanon's Beqaa Valley." <a href="http://en.wikipedia.org/wiki/Cabernet_Sauvignon">More</a> </p>	
-								</div>
-								<div class="wineCardToggleable3">
-									<ul>
-									<p>Featured Region: Bordeaux <a href="http://wine.about.com/od/winearoundtheworld/a/Frenchwinereg.htm">More</a></p>
-										<p>Sub-Regions:</p>
-										<li>Left Bank</li>
-											<p>Known For: "soils with higher gravel content that favor Cabernet Sauvignon grapes. French wines from the left bank usually require more time to mature and will age for years."</p>
-										<li>Right Bank</li>
-											<p>Known For: "soil with more clay ... typically better suited for beginning Bordeaux wine drinkers, as they have lower tannin content, more fruit-forward flavor and are more inviting initially. "</p>
-									</ul>
-								</div>
-							</li>
-							
-							
-						</ol>
+<script type="text/javascript" src="js/models/wine.js"></script>
+<script type="text/javascript" src="js/views/wine.js"></script>
+<script type="text/javascript" src="js/routers/router.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
-					<p>Sources:</p>
-						<p><a href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia.org</a></p>
-						<p><a href="http://www.totalwine.com">Total Wine</a></p>
-						<p><a href="http://wine.about.com">About.com (Wine)</a></p>
+</body>
+</html>
 
-						<script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
-						<script type="text/javascript" src="js/userInterface.js"></script>
-				</div>
-				</div>
-				</div>
-			</div>
+p>Enter a "to do" task and click "Submit Task" to add it to the list.  <br> Click on the item to remove it from the list.</p>
+
+				<form name="checkListForm">
+					<input type="text" name="checkListItem"/>
+				</form>
+					<div id="button">Submit Task</div>
+				<br/>
+					<div class="list"></div>
+			
 			</body>
-</html>
-
-<script type="text/javascript" src="bower_components/bootstrap/dist//js/bootstrap.js"></script>
-
- </body>
 
 </html>
+
+$(document).ready(function() {
+    $("#button").click(function() {
+       var addItem = $('input[name=checkListItem]').val();
+       $(".list").append("<div class='item'>" + addItem + "</div>");
+    });
+     $(document).on("click", ".item", function() {
+         $(this).remove();
+     });
+});
